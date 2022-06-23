@@ -1,0 +1,52 @@
+@font-face {
+  font-family: Myfont;
+  src: url("../WhiteStorm.otf");
+}
+
+body{
+	height: 100%;
+	width: 100%;
+	background: #c7a74e;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+img{
+	position: absolute;
+	top: 0;
+	z-index: -1;
+}
+
+h1{
+	font-family: MyFont;
+	font-size: 8vh;
+	text-align: center;
+}
+
+button{
+	height: 6vh;
+	width: 12vh;
+	font-family: MyFont;
+	font-size: 5vh;
+	background: #382f15;
+	color: white;
+	border: none;
+	position: absolute;
+	bottom: 0;
+}
+
+.container{
+	margin-top: 20vh;
+	width: 70%;
+	height: 50vh;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	text-align: center;
+}
