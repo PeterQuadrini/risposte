@@ -20,10 +20,24 @@ img{
 	z-index: -1;
 }
 
-h1{
+.header {
+	background-color: black;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	margin-bottom: 5vh;
+}
+
+.website {
+	font-family: MyFont;
+	font-size: 4vh;
+	color: #c7a74e;;
+}
+
+.title {
 	font-family: MyFont;
 	font-size: 8vh;
-	text-align: center;
+	margin-top: 0;
+	color: #c7a74e;
 }
 
 button{
@@ -31,17 +45,16 @@ button{
 	width: 12vh;
 	font-family: MyFont;
 	font-size: 5vh;
-	background: #382f15;
+	/* background: #382f15; */
+	background: black;
 	color: white;
 	border: none;
-	position: absolute;
-	bottom: 0;
+	font-size: 5vh;
 }
 
 .container{
-	margin-top: 20vh;
 	width: 70%;
-	height: 50vh;
+	height: 90vh;
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -50,3 +63,68 @@ button{
 	overflow: hidden;
 	text-align: center;
 }
+
+textarea {
+	background-color: transparent;
+	border: none;
+	font-family: MyFont;
+	font-size: 5vh;
+	text-align: center;
+	width: 100%;
+	letter-spacing: 0.2vw;
+}
+
+textarea:focus{
+	border:none;
+	outline: none;
+	font-family: MyFont;
+	font-size: 5vh;
+	text-align: center;
+	letter-spacing: 0.2vw;
+}
+
+.risposta {
+	height: 20vh;
+	letter-spacing: 0.2vw;
+	font-family: MyFont;
+	font-size: 8vh;
+	text-align: center;
+}
+
+
+.container-risposta {
+	margin-top: 5vh;
+	height: 20vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+.loader {
+	margin-top:2vh;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: #000000;
+	box-shadow: 32px 0 #000000, -32px 0 #000000;
+	position: relative;
+	animation: flash 0.5s ease-out infinite alternate;
+  }
+  
+  @keyframes flash {
+	0% {
+	  background-color: #FFF2;
+	  box-shadow: 32px 0 #FFF2, -32px 0 #000000;
+	}
+	50% {
+	  background-color: #000000;
+	  box-shadow: 32px 0 #FFF2, -32px 0 #FFF2;
+	}
+	100% {
+	  background-color: #FFF2;
+	  box-shadow: 32px 0 #000000, -32px 0 #FFF2;
+	}
+  }
+		

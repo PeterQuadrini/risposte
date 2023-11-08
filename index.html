@@ -9,8 +9,16 @@
 </head>
 <body>
 	<div class="container">
-		<h1 id="scritta" class="risposta"></h1>
+		<div class="header">
+			<p class="website">librorisposte.com</p>
+			<h1 class="title">Libro delle Risposte</h1>
+		</div>
+		<textarea placeholder="Fai una domanda..."></textarea>
 		<button onclick="chiedi()">Chiedi</button>
+		<div class="container-risposta">
+			<span class="loader" id="loader" style="display: none;"></span>
+			<h1 id="scritta" class="risposta"></h1>
+		</div>
 	</div>
 
 	<script type="text/javascript" src="static/app/app.js"></script>

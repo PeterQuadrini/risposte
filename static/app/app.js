@@ -1,11 +1,18 @@
 
 
 function chiedi() {
-let index = Math.floor(Math.random() * IT.length);
-let phrase = IT[index]
-let cmp = document.getElementById("scritta")
-cmp.innerHTML = phrase
-
+    let cmp = document.getElementById("scritta")
+    let loader = document.getElementById("loader")
+    let index = Math.floor(Math.random() * IT.length);
+    let phrase = IT[index]
+    cmp.innerHTML = phrase
+    loader.style.display = 'inline-block'
+    cmp.style.display = 'none'
+    setTimeout(() => {  
+        cmp.style.display = 'inline-block'
+        loader.style.display = 'none'
+        
+    }, 3000);
 }
 
 const IT = [
