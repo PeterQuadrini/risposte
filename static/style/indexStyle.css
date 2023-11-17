@@ -6,7 +6,8 @@
 body{
 	height: 100%;
 	width: 100%;
-	background: #c7a74e;
+	/* background: #c7a74e; */
+	background: #ffc700;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -29,14 +30,14 @@ img{
 .website {
 	font-family: MyFont;
 	font-size: 4vh;
-	color: #c7a74e;;
+	color: #ffc700;;
 }
 
 .title {
 	font-family: MyFont;
 	font-size: 8vh;
 	margin-top: 0;
-	color: #c7a74e;
+	color: #ffc700;
 }
 
 button{
@@ -46,9 +47,10 @@ button{
 	font-size: 5vh;
 	/* background: #382f15; */
 	background: black;
-	color: white;
+	color: #ffc700;
 	border: none;
 	font-size: 5vh;
+	margin-bottom: 10%;
 }
 
 .container{
@@ -71,6 +73,7 @@ textarea {
 	text-align: center;
 	width: 100%;
 	letter-spacing: 0.2vw;
+	margin-bottom: 2vh;
 }
 
 textarea:focus{
@@ -82,24 +85,60 @@ textarea:focus{
 	letter-spacing: 0.2vw;
 }
 
-.risposta {
+/* .risposta {
 	height: 20vh;
 	letter-spacing: 0.2vw;
 	font-family: MyFont;
 	font-size: 8vh;
 	text-align: center;
+} */
+
+.risposta {
+	height: 20vh;
+	/* height: 20vh; */
+	letter-spacing: 0.2vw;
+	font-family: MyFont;
+	font-size: 8vh;
+	/* font-size: 8vh; */
+	text-align: center;
 }
 
+textarea:focus::placeholder {
+	color: transparent;
+  }
+
+  textarea:focus::-webkit-input-placeholder { color:transparent; }
+  textarea:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+  textarea:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+  textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+
+/* .container-risposta {
+	margin-top: 5vh;
+	height: 30vh;
+	width: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+} */
 
 .container-risposta {
 	margin-top: 5vh;
 	height: 20vh;
+	width: 40%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
+::placeholder {
+	color: rgb(78, 78, 78);
+	opacity: 1; /* Firefox */
+  }
 
+button::selection {
+	border: none;
+}
 
 .loader {
 	margin-top:2vh;
